@@ -59,7 +59,7 @@ html {
     color: var(--dark-solid);
 }
 main {
-    background-color: var(--dark-900);
+    background-color: rgb(130, 199, 232);
 }
 a {
     text-decoration: none;
@@ -126,9 +126,10 @@ header {
 /*HERO*/
 
 .hero {
-    background-image: url(../img/portada.jpg);
+    /*background-image: url(../img/portada.jpg);
     padding: var(--spacing-24);
-    background-size: cover;
+    background-position: top;
+    background-size: cover;*/
     position: relative;
     z-index: 1;
 }
@@ -139,8 +140,8 @@ header {
     background-attachment: fixed;
     position: relative;
     z-index: 2;
+    align-items: start;
 }
-
 
 .hero::before {
     content: "";
@@ -154,3 +155,42 @@ header {
     z-index: 2;
 }
 
+/*Videos/Cuentos*/
+
+.video {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: var(--spacing-36);
+    padding: var(--spacing-24);
+}
+
+.video:nth-child(2) .video__iframe {
+    order: -1;
+}   
+
+.video__content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-24)    
+}
+
+.video__title {
+    font-size: var(--font-jumbo);
+    font-family: var(--alt-font);
+    font-weight: 500;
+}
+
+.video__subtitle {
+    font-size: var(--font-xlarge);
+    font-family: var(--alt-font);
+    font-weight: 300;
+    border-bottom: 2px solid var(--primary-solid);
+    padding-bottom: var(--spacing-20);
+}
+
+.video__text {
+    font-size: var(--font-medium);
+    font-family: var(--alt-font);
+    font-weight: 300;
+}
