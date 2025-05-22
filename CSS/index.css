@@ -59,7 +59,7 @@ html {
     color: var(--dark-solid);
 }
 main {
-    background-color: rgb(130, 199, 232);
+    background-color: rgb(92, 193, 233);
 }
 a {
     text-decoration: none;
@@ -193,4 +193,16 @@ header {
     font-size: var(--font-medium);
     font-family: var(--alt-font);
     font-weight: 300;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: var(--dark-solid);
+    padding: var(--spacing-8);
+}
+
+.footer__title {
+    font-size: var(--font-large);
+    font-weight: 500;
 }
