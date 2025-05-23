@@ -199,10 +199,84 @@ header {
 
 footer {
     background-color: var(--dark-solid);
-    padding: var(--spacing-8);
+    padding-left: var(--spacing-128);
+    padding-right: var(--spacing-128);
 }
 
 .footer__title {
-    font-size: var(--font-large);
+    font-size: var(--font-medium);
+    font-weight: 300;
+
+}
+
+/* PAGES/NICO*/
+
+.nico {
+    background-color: rgb(31, 33, 34);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: var(--spacing-36);
+    padding: var(--spacing-24);
+    border-top: white 2px;
+}
+
+.nico__content {
+    color: var(--light-font-solid);
+}
+.nico__title {
+    font-family: var(--alt-font);
+    font-size: var(--font-jumbo);
     font-weight: 500;
+    padding: var(--spacing-36);
+}
+
+.nico__text {
+    font-size: var(--font-xlarge);
+    font-family: var(--alt-font);
+    font-weight: 300;
+    padding-bottom: var(--spacing-20);   
+}
+/*ESTIRAR TIENDA AL MAX DE LA PANTALLA AUNQUE NO HAYA CONTENIDO*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, footer {
+  flex-shrink: 0;
+}
+
+main {
+  flex: 1;
+}
+
+/*ESTIRAR TIENDA AL MAX DE LA PANTALLA AUNQUE NO HAYA CONTENIDO*/
+
+.tienda {
+    align-items: center;
+    display:block;   
+    padding: var(--spacing-128)
+   
+}
+
+.tienda__title {
+    font-size: var(--font-xlarge);
+    font-family: var(--alt-font);
+    font-weight: 300;
+    padding: var(--spacing-20)
+}
+
+.tienda__subtitle {
+    font-size: var(--font-display);
+    font-family: var(--alt-font);
+    font-weight: 900;
+    padding: var(--spacing-20)
 }

@@ -4,31 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presentaciones</title>
+    <link rel=stylesheet href=../CSS/index.css>
 </head>
 <body>
     <header> <!-- INICIO HEADER-->
-        <nav>
-            <picture>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
                 <a href="../index.html">
                     <img src="../img/Logo_trans.png" alt="logo Los Cuentos de Nico">
                 </a>
             </picture>    
-            <ul>
-                <li>
-                    <a href="./nico.html">Sobre Nico</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./nico.html">Sobre Nico</a>
                 </li>
-                <li>
-                    <a href="./presentaciones.htlm">Presentaciones</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./presentaciones.html">Presentaciones</a>
                 </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./contacto.html">Contacto</a>
                 </li>
-                <li>
-                    <a href="./tienda.html">Tienda</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./tienda.html">Tienda</a>
                 </li>
             </ul>
-        </nav>
-    </header>  <!-- FIN HEADER-->
+        </nav>   
+       </header>  <!-- FIN HEADER-->
     <Main>
         <section>
             <picture>
@@ -46,17 +47,16 @@
             </picture>
         </section>
     </Main>
-    <footer>
-        <picture>
+    <footer class="footer navbar">
+        <picture class="navbar__logo">
             <img src="../img/Logo_trans.png" alt="logo Los Cuentos de Nico">
         </picture>
-        <article>
+        <article class="footer__title">
             <h4>Los Cuentos de Nico</h4>
-            <h5></h5>
         </article>
-                <picture>
-            <img src="../img/nico_trans.png" alt="Nico">
-        </picture>
+            <picture class="navbar__logo">
+                <img src="../img/nico_trans.png" alt="Nico">
+            </picture>
     </footer>
 </body>
 </html>
